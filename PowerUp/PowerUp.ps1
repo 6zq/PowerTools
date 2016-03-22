@@ -2256,7 +2256,7 @@ function Invoke-AllChecks {
     $Results = Get-VulnSchTask
     $Results | Format-List
     if($HTMLReport) {
-        $Results | ConvertTo-HTML -Head $Header -Body "<H2>Vulnerabl Schasks</H2>" | Out-File -Append $HtmlReportFile
+        $Results | ConvertTo-HTML -Head $Header -Body "<H2>Vulnerable Schasks</H2>" | Out-File -Append $HtmlReportFile
     }
 
     "`n`n[*] Checking for unattended install files..."
